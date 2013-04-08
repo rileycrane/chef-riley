@@ -64,12 +64,27 @@ GIT
   specs:
     redis (0.0.4)
 
+GIT
+  remote: https://github.com/edelight/chef-solo-search
+  ref: master
+  sha: 9327d688024ab8478e9e55422adc6b4cb2a22d5f
+  specs:
+    chef-solo-search (0.4.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/users
+  ref: master
+  sha: 9a934e14aae094841456273d1c5010020ddf51ad
+  specs:
+    users (1.4.1)
+
 DEPENDENCIES
   apt (>= 0)
   build-essential (>= 0)
   chef-cookbook-libfreetype (>= 0)
   chef-cookbook-libjpeg (>= 0)
   chef-cookbook-python-psycopg2 (>= 0)
+  chef-solo-search (>= 0)
   erlang (>= 0)
   git (>= 0)
   nginx (>= 0)
@@ -79,5 +94,6 @@ DEPENDENCIES
   rabbitmq (>= 0)
   redis (>= 0)
   runit (>= 0)
+  users (>= 0)
   zlib (>= 0)
 

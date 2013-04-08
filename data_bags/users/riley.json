@@ -1,0 +1,7 @@
+{
+    "id": "riley",
+    "groups": ["sysadmin"],
+    "comment": "Riley Crane",
+    "shell": "/bin/bash",
+    "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7ZAiWD4H6AiuHB+XMWpamDWJXgJLhv7GRIAmDuK4Iny3L3Ol3oTdQk+FkGGXKEACJFi0I+I1yCOGvF18K+k/DOdBta+K0tYGoYOI7CP2hajOjaduubVKtfSIRBmESpILVXDs37IzingPDBrqOqt6kGT1OsYKlfP4nVRQTY+zRhHudpZEd1PYMkH+7r4i88RzCGZmOlqpARFPM9keyn80EpOlk6AoKDj5eGZP5tKq+sBhUiA5LhGjaIUZ+uhgPZ2uJcVKVhmkpH5wRWeOBEYWW4UCCYFQYMan5JH8+DGiLnnE0EsloTpdGteyOUxiN3Hq9jDNNh5fzBQTEdb/rCrd7 rileycrane@gmail.com"
+}

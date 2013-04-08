@@ -13,6 +13,8 @@ cookbook 'erlang'
 cookbook 'rabbitmq'
 cookbook 'nginx'
 cookbook 'runit'
+cookbook 'users',
+	:git => 'https://github.com/opscode-cookbooks/users'
 cookbook 'chef-cookbook-python-psycopg2',
     :git => 'git@github.com:rileycrane/chef-cookbook-python-psycopg2.git'
 cookbook 'chef-cookbook-libjpeg',
@@ -21,3 +23,5 @@ cookbook 'chef-cookbook-libfreetype',
     :git => 'git://github.com/jbergantine/chef-cookbook-libfreetype.git'
 cookbook 'redis',
 	:git => 'https://github.com/ctrabold/chef-redis.git'
+cookbook 'chef-solo-search',
+	:git => 'https://github.com/edelight/chef-solo-search'
