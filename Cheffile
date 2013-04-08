@@ -13,6 +13,7 @@ cookbook 'redis'
 cookbook 'erlang'
 cookbook 'rabbitmq'
 cookbook 'nginx'
+cookbook 'runit', '1.0.0'
 cookbook 'chef-cookbook-python-psycopg2',
     :git => 'git@github.com:rileycrane/chef-cookbook-python-psycopg2.git'
 cookbook 'chef-cookbook-libjpeg',

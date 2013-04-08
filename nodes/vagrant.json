@@ -6,27 +6,27 @@
       "modules": ["http_gzip_static_module", "http_ssl_module"]
     }
   },
-        "postgresql" : {
-          "version"  : "9.1",
-          "listen_address" : "*",
-          "hba" : [
-            { "method" : "trust", "address" : "0.0.0.0/0" },
-            { "method" : "trust", "address" : "::1/0" }
-          ],
-          "password" : {
-            "postgres" : "thisisapassword"
-          }
-        },
-        "python" : {
-          "version" : "2.7.3",
-          "distribute_install_py_version" : "2.7"
-        },
-        "memcached" : {
-          "memory" : "32",
-          "user" : "vagrant",
-          "port" : "11211",
-          "listen" : "127.0.0.1"
-        },
+  "postgresql" : {
+    "version"  : "9.1",
+    "listen_address" : "*",
+    "hba" : [
+      { "method" : "trust", "address" : "0.0.0.0/0" },
+      { "method" : "trust", "address" : "::1/0" }
+    ],
+    "password" : {
+      "postgres" : "thisisapassword"
+    }
+  },
+  "python" : {
+    "version" : "2.7.3",
+    "distribute_install_py_version" : "2.7"
+  },
+  "memcached" : {
+    "memory" : "32",
+    "user" : "vagrant",
+    "port" : "11211",
+    "listen" : "127.0.0.1"
+  },
 
   "run_list": [
     "recipe[nginx::source]",
