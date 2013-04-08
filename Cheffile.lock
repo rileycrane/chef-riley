@@ -14,8 +14,6 @@ SITE
       runit (~> 1.0)
       windows (>= 0.0.0)
       yum (>= 0.0.0)
-    install_from (3.0.4)
-    metachef (3.0.4)
     nginx (1.4.0)
       apt (>= 0.0.0)
       build-essential (>= 0.0.0)
@@ -30,10 +28,6 @@ SITE
       yum (>= 0.0.0)
     rabbitmq (2.0.0)
       erlang (>= 0.9)
-    redis (3.0.4)
-      install_from (>= 0.0.0)
-      metachef (>= 0.0.0)
-      runit (>= 0.0.0)
     runit (1.1.2)
       build-essential (>= 0.0.0)
       yum (>= 0.0.0)
@@ -63,6 +57,13 @@ GIT
   specs:
     chef-cookbook-python-psycopg2 (0.0.0)
 
+GIT
+  remote: https://github.com/ctrabold/chef-redis.git
+  ref: master
+  sha: e3a89f34d0f5b81867ae9e07a9404ac89e1ff61c
+  specs:
+    redis (0.0.4)
+
 DEPENDENCIES
   apt (>= 0)
   build-essential (>= 0)
@@ -77,5 +78,6 @@ DEPENDENCIES
   python (>= 0)
   rabbitmq (>= 0)
   redis (>= 0)
+  runit (>= 0)
   zlib (>= 0)
 

@@ -9,14 +9,15 @@ cookbook 'openssl'
 cookbook 'postgresql'
 cookbook 'python'
 cookbook 'zlib'
-cookbook 'redis'
 cookbook 'erlang'
 cookbook 'rabbitmq'
 cookbook 'nginx'
-cookbook 'runit', '1.0.0'
+cookbook 'runit'
 cookbook 'chef-cookbook-python-psycopg2',
     :git => 'git@github.com:rileycrane/chef-cookbook-python-psycopg2.git'
 cookbook 'chef-cookbook-libjpeg',
     :git => 'git://github.com/jbergantine/chef-cookbook-libjpeg.git'
 cookbook 'chef-cookbook-libfreetype',
     :git => 'git://github.com/jbergantine/chef-cookbook-libfreetype.git'
+cookbook 'redis',
+	:git => 'https://github.com/ctrabold/chef-redis.git'
