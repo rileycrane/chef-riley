@@ -1,7 +1,7 @@
 #
 # Author:: Christian Trabold <christian.trabold@dkd.de>
 # Cookbook Name:: redis
-# Attributes:: default
+# Recipe:: package
 #
 # Copyright 2011, dkd Internet Service GmbH
 #
@@ -16,11 +16,21 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-default['redis']['bind']         = "127.0.0.1"
-default['redis']['port']         = "6379"
-default['redis']['config_path']  = "/etc/redis/redis.conf"
-default['redis']['daemonize']    = "yes"
-default['redis']['timeout']      = "300"
-default['redis']['loglevel']     = "notice"
-default['redis']['password']     = nil
+package "redis-server"
+
+service "redis-server" do
+  start_command "/etc/init.d/redis-server start #{node['redis']['config_path']}"
+  stop_command "/etc/init.d/redis-server stop"
+  restart_command "/etc/init.d/redis-server restart"
+  action [:enable, :start]
+end
+
+template "/etc/redis/redis.conf" do
+  source "redis.conf.erb"
+  owner "root"
+  group "root"
+  mode 0644
+  notifies :restart, "service[redis-server]"
+end

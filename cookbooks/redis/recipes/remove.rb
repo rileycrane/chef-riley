@@ -1,7 +1,7 @@
 #
 # Author:: Christian Trabold <christian.trabold@dkd.de>
 # Cookbook Name:: redis
-# Attributes:: default
+# Recipe:: remove
 #
 # Copyright 2011, dkd Internet Service GmbH
 #
@@ -16,11 +16,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-default['redis']['bind']         = "127.0.0.1"
-default['redis']['port']         = "6379"
-default['redis']['config_path']  = "/etc/redis/redis.conf"
-default['redis']['daemonize']    = "yes"
-default['redis']['timeout']      = "300"
-default['redis']['loglevel']     = "notice"
-default['redis']['password']     = nil
+package "redis-server" do
+  action :remove
+end
+
+gem_package "redis" do
+  action :remove
+end
