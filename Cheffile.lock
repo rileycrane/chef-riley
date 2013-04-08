@@ -1,0 +1,81 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.9.2)
+    build-essential (1.3.4)
+    chef_handler (1.1.4)
+    dmg (1.1.0)
+    erlang (1.2.0)
+      build-essential (>= 0.0.0)
+      yum (>= 0.5.0)
+    git (2.3.0)
+      build-essential (>= 0.0.0)
+      dmg (>= 0.0.0)
+      runit (~> 1.0)
+      windows (>= 0.0.0)
+      yum (>= 0.0.0)
+    install_from (3.0.4)
+    metachef (3.0.4)
+    nginx (1.4.0)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ohai (>= 1.1.4)
+      yum (>= 0.0.0)
+    ohai (1.1.8)
+    openssl (1.0.2)
+    postgresql (2.2.2)
+      openssl (>= 0.0.0)
+    python (1.2.2)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+    rabbitmq (2.0.0)
+      erlang (>= 0.9)
+    redis (3.0.4)
+      install_from (>= 0.0.0)
+      metachef (>= 0.0.0)
+      runit (>= 0.0.0)
+    runit (1.1.2)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+    windows (1.8.6)
+      chef_handler (>= 0.0.0)
+    yum (2.2.0)
+    zlib (2.0.0)
+
+GIT
+  remote: git://github.com/jbergantine/chef-cookbook-libfreetype.git
+  ref: master
+  sha: f491eb7e33056d176f82429e27928e7d309963e9
+  specs:
+    chef-cookbook-libfreetype (0.0.1)
+
+GIT
+  remote: git://github.com/jbergantine/chef-cookbook-libjpeg.git
+  ref: master
+  sha: bc8d0339ba08b1fa271b0638d4ea2181850525a6
+  specs:
+    chef-cookbook-libjpeg (0.0.1)
+
+GIT
+  remote: git@github.com:rileycrane/chef-cookbook-python-psycopg2.git
+  ref: master
+  sha: d482def4b5496c41ee9b38ff20a7267e0ce99799
+  specs:
+    chef-cookbook-python-psycopg2 (0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  build-essential (>= 0)
+  chef-cookbook-libfreetype (>= 0)
+  chef-cookbook-libjpeg (>= 0)
+  chef-cookbook-python-psycopg2 (>= 0)
+  erlang (>= 0)
+  git (>= 0)
+  nginx (>= 0)
+  openssl (>= 0)
+  postgresql (>= 0)
+  python (>= 0)
+  rabbitmq (>= 0)
+  redis (>= 0)
+  zlib (>= 0)
+
