@@ -1,6 +1,7 @@
 To get started from this repo
 ===============================
 git clone git@github.com:rileycrane/chef-riley.git
+
 vagrant up
 
 
